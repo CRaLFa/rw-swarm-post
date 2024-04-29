@@ -7,42 +7,42 @@
     {
       "type": "image/png",
       "sizes": "192x192",
-      "src": "/images/icons/logo-192.png"
+      "src": "/rw-swarm-post/images/icons/logo-192.png"
     },
     {
       "type": "image/png",
       "sizes": "48x48",
-      "src": "/images/icons/logo-48.png"
+      "src": "/rw-swarm-post/images/icons/logo-48.png"
     },
     {
       "type": "image/png",
       "sizes": "72x72",
-      "src": "/images/icons/logo-72.png"
+      "src": "/rw-swarm-post/images/icons/logo-72.png"
     },
     {
       "type": "image/png",
       "sizes": "128x128",
-      "src": "/images/icons/logo-128.png"
+      "src": "/rw-swarm-post/images/icons/logo-128.png"
     },
     {
       "type": "image/png",
       "sizes": "384x384",
-      "src": "/images/icons/logo-384.png"
+      "src": "/rw-swarm-post/images/icons/logo-384.png"
     },
     {
       "type": "image/png",
       "sizes": "512x512",
-      "src": "/images/icons/logo-512.png"
+      "src": "/rw-swarm-post/images/icons/logo-512.png"
     },
     {
       "type": "image/png",
       "sizes": "96x96",
-      "src": "/images/icons/logo-96.png"
+      "src": "/rw-swarm-post/images/icons/logo-96.png"
     },
     {
       "type": "image/png",
       "sizes": "1024x1024",
-      "src": "/images/icons/maskable-1024.png",
+      "src": "/rw-swarm-post/images/icons/maskable-1024.png",
       "purpose": "maskable"
     }
   ],
@@ -57,7 +57,7 @@
       "url": "/?source=pwa&mode=night",
       "icons": [
         {
-          "src": "/images/logo.svg",
+          "src": "/rw-swarm-post/images/logo.svg",
           "sizes": "150x150"
         }
       ]
@@ -69,7 +69,7 @@
       "url": "/?source=pwa&mode=day",
       "icons": [
         {
-          "src": "/images/logo.svg",
+          "src": "/rw-swarm-post/images/logo.svg",
           "sizes": "150x150"
         }
       ]
