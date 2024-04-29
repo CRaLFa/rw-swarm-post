@@ -1,16 +1,26 @@
+/**
+ * @param {string} text
+ */
 const createParagraph = (text) => {
   const p = document.createElement('p');
   p.innerText = text;
   return p;
 };
 
+/**
+ * @param {URLSearchParams} params
+ * @param {string} name
+ */
+const showParam = (params, name) => {
+  const main = document.querySelector('main');
+  main.appendChild(createParagraph(`${name}: ${params.has(name) ? params.get(name) : 'undefined'}`));
+};
+
 window.addEventListener('DOMContentLoaded', async () => {
 
-  const params = new URL(window.location.href).searchParams;
-
-  const main = document.getElementById('main');
-  main.appendChild(createParagraph(`title: ${params.get(title)}`));
-  main.appendChild(createParagraph(`text: ${params.get(text)}`));
-  main.appendChild(createParagraph(`url: ${params.get(url)}`));
+  const params = new URL(document.location).searchParams;
+  showParam(params, 'title');
+  showParam(params, 'text');
+  showParam(params, 'url');
 
 });
