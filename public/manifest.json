@@ -1,7 +1,7 @@
 {
   "name": "Rewrite Swarm Post",
   "short_name": "rw-swarm-post",
-  "start_url": "https://cralfa.github.io/rw-swarm-post/",
+  "start_url": "/rw-swarm-post/",
   "display": "standalone",
   "icons": [
     {
@@ -54,7 +54,7 @@
       "name": "Start in dark mode",
       "short_name": "Dark mode",
       "description": "Start PWA in dark mode",
-      "url": "https://cralfa.github.io/rw-swarm-post/?mode=night",
+      "url": "/rw-swarm-post/?mode=night",
       "icons": [
         {
           "src": "/rw-swarm-post/images/logo.svg",
@@ -66,7 +66,7 @@
       "name": "Start in light mode",
       "short_name": "Light mode",
       "description": "Start PWA in light mode",
-      "url": "https://cralfa.github.io/rw-swarm-post/?mode=day",
+      "url": "/rw-swarm-post/?mode=day",
       "icons": [
         {
           "src": "/rw-swarm-post/images/logo.svg",

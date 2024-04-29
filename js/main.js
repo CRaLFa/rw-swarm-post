@@ -8,6 +8,16 @@ const createParagraph = (text) => {
 };
 
 /**
+* @param {string} url
+*/
+const createAnchor = (url) => {
+  const a = document.createElement('a');
+  a.href = url;
+  a.innerText = text;
+  return a;
+};
+
+/**
  * @param {URLSearchParams} params
  * @param {string} name
  */
@@ -22,5 +32,16 @@ window.addEventListener('DOMContentLoaded', async () => {
   showParam(params, 'title');
   showParam(params, 'text');
   showParam(params, 'url');
+
+  if (params.has('text')) {
+    const matched = params.get('text').match(/^私は(.+)～(https?:\/\/.+)、(.+)にいました$/);
+    if (matched) {
+      const text = `I'm at ${matched[3]} in ${matched[1]}`;
+      const url = matched[2];
+      document.querySelector('main')
+          .appendChild(createParagraph(text))
+          .appendChild(createAnchor(url));
+    }
+  }
 
 });
