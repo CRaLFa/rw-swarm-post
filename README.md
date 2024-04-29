@@ -1,3 +1,3 @@
 # rw-swarm-post
 
-A PWA that rewrites Swarm posts to X (Twitter)
+A PWA for rewriting Swarm posts for X (Twitter)

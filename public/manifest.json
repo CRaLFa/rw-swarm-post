@@ -48,7 +48,7 @@
   ],
   "theme_color": "#282c34",
   "background_color": "#282c34",
-  "description": "A PWA that rewrites Swarm posts to X (Twitter)",
+  "description": "A PWA for rewriting Swarm posts for X (Twitter)",
   "shortcuts": [
     {
       "name": "Start in dark mode",
