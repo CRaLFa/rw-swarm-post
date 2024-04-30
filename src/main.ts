@@ -8,7 +8,7 @@ document.querySelector<HTMLButtonElement>('#clip')!.addEventListener('click', ()
 });
 
 const main = () => {
-  const params = new URL(document.location.href).searchParams;
+  const params = new URL(document.URL).searchParams;
   if (params.has('text')) {
     const matched = params.get('text')!.match(/^私は(.+)～(https?:\/\/.+)、(.+)にいました$/);
     if (matched)
