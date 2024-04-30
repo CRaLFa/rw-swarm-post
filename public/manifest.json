@@ -3,6 +3,17 @@
   "short_name": "rw-swarm-post",
   "start_url": "/rw-swarm-post/",
   "display": "standalone",
+  "theme_color": "#282c34",
+  "background_color": "#282c34",
+  "description": "A PWA for rewriting Swarm posts for X (Twitter)",
+  "share_target": {
+    "action": "/rw-swarm-post/",
+    "enctype": "application/x-www-form-urlencoded",
+    "method": "GET",
+    "params": {
+      "text": "text"
+    }
+  },
   "icons": [
     {
       "type": "image/png",
@@ -46,9 +57,6 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#282c34",
-  "background_color": "#282c34",
-  "description": "A PWA for rewriting Swarm posts for X (Twitter)",
   "shortcuts": [
     {
       "name": "Start in dark mode",
@@ -74,13 +82,5 @@
         }
       ]
     }
-  ],
-  "share_target": {
-    "action": "/rw-swarm-post/",
-    "enctype": "application/x-www-form-urlencoded",
-    "method": "GET",
-    "params": {
-      "text": "text"
-    }
-  }
+  ]
 }
