@@ -2,9 +2,9 @@ import './style.css';
 
 const textarea = document.querySelector<HTMLTextAreaElement>('#text')!;
 
-document.querySelector<HTMLButtonElement>('#clip')!.addEventListener('click', () => {
-  navigator.clipboard.writeText(textarea.value);
-  window.alert('クリップボードにコピーしました。');
+document.querySelector<HTMLButtonElement>('#clip')!.addEventListener('click', async () => {
+  await navigator.clipboard.writeText(textarea.value);
+  window.alert('コピーしました。');
 });
 
 const main = () => {
