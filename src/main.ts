@@ -5,12 +5,17 @@ const textarea = document.querySelector<HTMLTextAreaElement>('#text')!;
 document.querySelector<HTMLButtonElement>('#clip')!.addEventListener('click', async () => {
   await navigator.clipboard.writeText(textarea.value);
   window.alert('コピーしました。');
+  window.close();
 });
 
 document.querySelector<HTMLImageElement>('#share')!.addEventListener('click', async () => {
-  navigator.share && await navigator.share({
-    text: textarea.value,
-  });
+  if (navigator.share)
+    await navigator.share({
+      text: textarea.value,
+    });
+  else
+    window.alert('お使いのブラウザではサポートされていません。');
+  window.close();
 });
 
 const main = () => {
