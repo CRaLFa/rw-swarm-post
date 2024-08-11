@@ -7,6 +7,12 @@ document.querySelector<HTMLButtonElement>('#clip')!.addEventListener('click', as
   window.alert('コピーしました。');
 });
 
+document.querySelector<HTMLImageElement>('#share')!.addEventListener('click', async () => {
+  navigator.share && await navigator.share({
+    text: textarea.value,
+  });
+});
+
 const main = () => {
   const params = new URL(document.URL).searchParams;
   if (params.has('text')) {
