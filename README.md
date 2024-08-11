@@ -2,6 +2,8 @@
 
 A PWA for rewriting Swarm posts for X (Twitter)
 
+<https://cralfa.github.io/rw-swarm-post/>
+
 ## Attribution
 
 [Icon by NajmunNahar](https://www.freepik.com/search)
