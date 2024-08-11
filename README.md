@@ -1,6 +1,6 @@
 # rw-swarm-post
 
-A PWA for rewriting Swarm posts for X (Twitter)
+A PWA for rewriting Swarm posts
 
 <https://cralfa.github.io/rw-swarm-post/>
 
