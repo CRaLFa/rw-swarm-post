@@ -5,6 +5,11 @@ let normalText: string;
 let commentText: string;
 let isComment = false;
 
+document.querySelector<HTMLInputElement>('#comment')!.addEventListener('change', (event) => {
+  isComment = (event.target as HTMLInputElement).checked;
+  changeText();
+});
+
 document.querySelector<HTMLButtonElement>('#clip')!.addEventListener('click', async () => {
   await navigator.clipboard.writeText(textarea.value);
   window.alert('コピーしました。');
@@ -19,11 +24,6 @@ document.querySelector<HTMLImageElement>('#share')!.addEventListener('click', as
   else
     window.alert('お使いのブラウザではサポートされていません。');
   window.close();
-});
-
-document.querySelector<HTMLInputElement>('#comment')!.addEventListener('change', (event) => {
-  isComment = (event.target as HTMLInputElement).checked;
-  changeText();
 });
 
 const changeText = () => {

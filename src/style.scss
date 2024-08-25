@@ -26,21 +26,6 @@ body {
   font-size: 1.25rem;
 }
 
-.button-area {
-  display: flex;
-  column-gap: 3%;
-  margin: 10px 0;
-
-  #clip {
-    width: 85%;
-    font-size: 1.5rem;
-  }
-
-  #share {
-    width: 10%;
-  }
-}
-
 .toggle-area {
   display: flex;
   column-gap: 3%;
@@ -98,5 +83,20 @@ body {
 
   .toggle-span {
     line-height: 35px;
+  }
+}
+
+.button-area {
+  display: flex;
+  column-gap: 3%;
+  margin: 10px 0;
+
+  #clip {
+    width: 85%;
+    font-size: 1.5rem;
+  }
+
+  #share {
+    width: 10%;
   }
 }
