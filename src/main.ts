@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 
 const textarea = document.querySelector<HTMLTextAreaElement>('#text')!;
 let normalText: string;
@@ -30,7 +30,7 @@ const changeText = () => {
   if (!normalText || !commentText)
     return;
   if (isComment) {
-    textarea.value = ' ' + commentText;
+    textarea.value = commentText;
     textarea.setSelectionRange(0, 0);
     textarea.focus();
   } else {
@@ -45,7 +45,7 @@ const main = () => {
     if (matched) {
       const spot = matched[3], city = matched[1], url = matched[2];
       normalText = `I'm at ${spot} in ${city}\n${url}`;
-      commentText = `(@ ${spot} in ${city})\n${url}`
+      commentText = ` (@ ${spot} in ${city})\n${url}`
     } else {
       normalText = commentText = params.get('text')!;
     }
