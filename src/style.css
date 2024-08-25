@@ -29,7 +29,7 @@ body {
 .button-area {
   display: flex;
   column-gap: 3%;
-  margin: 10px 0 20px 0;
+  margin: 10px 0;
 }
 
 #clip {
@@ -95,4 +95,8 @@ body {
 
 #comment:checked + .toggle-label::after {
   left: 40px;
+}
+
+.toggle-span {
+  line-height: 35px;
 }
