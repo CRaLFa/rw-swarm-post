@@ -5,7 +5,7 @@
   "display": "standalone",
   "theme_color": "#282c34",
   "background_color": "#282c34",
-  "description": "A PWA for rewriting Swarm posts for X (Twitter)",
+  "description": "A PWA for rewriting Swarm posts",
   "share_target": {
     "action": "/rw-swarm-post/",
     "enctype": "application/x-www-form-urlencoded",
@@ -55,32 +55,6 @@
       "sizes": "1024x1024",
       "src": "/rw-swarm-post/images/icons/maskable-1024.png",
       "purpose": "maskable"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Start in dark mode",
-      "short_name": "Dark mode",
-      "description": "Start PWA in dark mode",
-      "url": "/rw-swarm-post/?mode=night",
-      "icons": [
-        {
-          "src": "/rw-swarm-post/images/logo.svg",
-          "sizes": "150x150"
-        }
-      ]
-    },
-    {
-      "name": "Start in light mode",
-      "short_name": "Light mode",
-      "description": "Start PWA in light mode",
-      "url": "/rw-swarm-post/?mode=day",
-      "icons": [
-        {
-          "src": "/rw-swarm-post/images/logo.svg",
-          "sizes": "150x150"
-        }
-      ]
     }
   ]
 }
