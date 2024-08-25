@@ -41,13 +41,14 @@ const changeText = () => {
 const main = () => {
   const params = new URL(document.URL).searchParams;
   if (params.has('text')) {
-    const matched = params.get('text')!.match(/^私は(.+)～(https?:\/\/.+)、(.+)にいました$/);
+    const text = params.get('text')!;
+    const matched = text.match(/^私は(.+)～(https?:\/\/.+)、(.+)にいました$/);
     if (matched) {
       const spot = matched[3], city = matched[1], url = matched[2];
       normalText = `I'm at ${spot} in ${city}\n${url}`;
-      commentText = ` (@ ${spot} in ${city})\n${url}`
+      commentText = ` (@ ${spot} in ${city})\n${url}`;
     } else {
-      normalText = commentText = params.get('text')!;
+      normalText = commentText = text;
     }
     changeText();
   }
